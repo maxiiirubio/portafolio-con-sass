@@ -1,0 +1,200 @@
+$color1: black;
+$color2: white;
+$color3: orangered;
+$color4: rgb(20, 20, 20);
+$color5: rgb(78, 77, 77);
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+.header{
+    background-color: $color1;
+    min-height: 80px;
+    #logo{
+        color: $color2;
+        font-size: 30px;
+        margin-left: 50px;
+        font-weight: 900;
+        font-family: 'Tapestry', cursive;
+
+        #logoSpan{
+            color: $color3;
+        }
+    }
+    .barra{
+        justify-content: end;
+
+        ul{
+            li{
+                #barra-estilo{
+                    color: $color2;
+                    font-size: 20px;
+                    font-weight: 900;
+                    font-family: 'Tapestry', cursive;
+                    &:hover{
+                        color: $color3;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+.main{
+    min-height: calc(100vh - 100px);
+    background-image: linear-gradient(to right top, #ff4500, #ff6781, #ffa0d2, #fad5fc, #ffffff);
+    background-image: linear-gradient(to right top, #ff4500, #fd3d00, #fc3500, #fa2b00, #f81f00, #ff2739, #ff3a5d, #ff507d, #fe84ba, #f4b3e4, #f0dcfa, #ffffff);
+    background-image: linear-gradient(to right top, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .titulo{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        color: $color2;
+        font-weight: 900;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        .titulo1{
+            height: 120px;
+            max-width: 600px;
+            background-color: $color3;
+            border: 5px solid $color1;
+            border-style: dashed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            font-weight: 900;
+            font-family: fantasy;
+            letter-spacing: 5px;
+        }
+        .titulo2{
+            height: 80px;
+            max-width: 500px;
+            background-color: $color3;
+            border: 5px solid $color1;
+            border-style: dashed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1,8rem;
+            font-weight: 900;
+            font-family: fantasy;
+            letter-spacing: 5px;
+        }
+    }
+}
+.footer{
+    background-color: $color1;
+    height: 20px;
+    margin: 0;
+    color: $color2;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+.section{
+    min-height: calc(100vh - 100px);
+    background-image: linear-gradient(to left top, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    .contFoto{
+        background: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border: 0;
+
+        .foto{
+            border-radius: 180px;
+            width: 250px;
+            border: 5px solid $color1;
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+        .redes{
+            font-size: 30px;
+            letter-spacing: 15px;
+            text-align: center;
+
+            a{
+                color: $color1;
+                &:hover{
+                    color: $color3;
+                font-size: 32px;
+                }
+            }
+        }
+    }
+    .perfilTexto{
+        padding: 60px;
+
+        .textoPerfil1{
+            color: $color1;
+            font-size: 50px;
+            font-family: 'Tapestry', cursive;
+            font-weight: 900;
+            margin-bottom: 30px;
+
+            i{
+                color: $color3;
+                font-size: 70px;
+                text-align: left;
+                margin-right: 50px;
+            }
+        }
+        .textoPerfil2{
+            color: $color4;
+            text-align: justify;
+            font-weight: 500;
+        }
+    }
+}
+.section1{
+    min-height: calc(100vh - 100px);
+    background-image: linear-gradient(to left bottom, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    .tituloCurriculum{
+        color: $color3;
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+        font-weight: 900;
+        font-family: 'Tapestry', cursive;
+
+        span{
+            color: $color1;
+            margin-left: 50px;
+        }
+    }
+    .divCurriculum{
+        padding: 20px;
+
+        article{
+           
+            h3{
+                font-weight: 700;
+                color: $color1;
+    
+                i{
+                    color: $color3;
+                    margin-right: 20px;
+                    font-size: 35px;
+                }
+            }
+            p{
+                color: $color5;
+                text-align: justify;
+            }
+        }
+    }
+}

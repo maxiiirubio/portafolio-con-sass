@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
+.header {
+  background-color: black;
+  min-height: 80px;
+}
+.header #logo {
+  color: white;
+  font-size: 30px;
+  margin-left: 50px;
+  font-weight: 900;
+  font-family: "Tapestry", cursive;
+}
+.header #logo #logoSpan {
+  color: orangered;
+}
+.header .barra {
+  justify-content: end;
+}
+.header .barra ul li #barra-estilo {
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Tapestry", cursive;
+}
+.header .barra ul li #barra-estilo:hover {
+  color: orangered;
+  font-size: 22px;
+}
+
+.main {
+  min-height: calc(100vh - 100px);
+  background-image: linear-gradient(to right top, #ff4500, #ff6781, #ffa0d2, #fad5fc, #ffffff);
+  background-image: linear-gradient(to right top, #ff4500, #fd3d00, #fc3500, #fa2b00, #f81f00, #ff2739, #ff3a5d, #ff507d, #fe84ba, #f4b3e4, #f0dcfa, #ffffff);
+  background-image: linear-gradient(to right top, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .titulo {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main .titulo .titulo1 {
+  height: 120px;
+  max-width: 600px;
+  background-color: orangered;
+  border: 5px solid black;
+  border-style: dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: fantasy;
+  letter-spacing: 5px;
+}
+.main .titulo .titulo2 {
+  height: 80px;
+  max-width: 500px;
+  background-color: orangered;
+  border: 5px solid black;
+  border-style: dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1, 8rem;
+  font-weight: 900;
+  font-family: fantasy;
+  letter-spacing: 5px;
+}
+
+.footer {
+  background-color: black;
+  height: 20px;
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
+
+.section {
+  min-height: calc(100vh - 100px);
+  background-image: linear-gradient(to left top, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.section .contFoto {
+  background: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 0;
+}
+.section .contFoto .foto {
+  border-radius: 180px;
+  width: 250px;
+  border: 5px solid black;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.section .contFoto .redes {
+  font-size: 30px;
+  letter-spacing: 15px;
+  text-align: center;
+}
+.section .contFoto .redes a {
+  color: black;
+}
+.section .contFoto .redes a:hover {
+  color: orangered;
+  font-size: 32px;
+}
+.section .perfilTexto {
+  padding: 60px;
+}
+.section .perfilTexto .textoPerfil1 {
+  color: black;
+  font-size: 50px;
+  font-family: "Tapestry", cursive;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.section .perfilTexto .textoPerfil1 i {
+  color: orangered;
+  font-size: 70px;
+  text-align: left;
+  margin-right: 50px;
+}
+.section .perfilTexto .textoPerfil2 {
+  color: rgb(20, 20, 20);
+  text-align: justify;
+  font-weight: 500;
+}
+
+.section1 {
+  min-height: calc(100vh - 100px);
+  background-image: linear-gradient(to left bottom, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.section1 .tituloCurriculum {
+  color: orangered;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 900;
+  font-family: "Tapestry", cursive;
+}
+.section1 .tituloCurriculum span {
+  color: black;
+  margin-left: 50px;
+}
+.section1 .divCurriculum {
+  padding: 20px;
+}
+.section1 .divCurriculum article h3 {
+  font-weight: 700;
+  color: black;
+}
+.section1 .divCurriculum article h3 i {
+  color: orangered;
+  margin-right: 20px;
+  font-size: 35px;
+}
+.section1 .divCurriculum article p {
+  color: rgb(78, 77, 77);
+  text-align: justify;
+}/*# sourceMappingURL=estilos.css.map */
