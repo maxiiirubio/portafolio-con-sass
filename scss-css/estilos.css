@@ -46,9 +46,9 @@
   font-weight: 900;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.main .titulo .titulo1 {
-  height: 120px;
+.main .titulo .titulos-1 {
   max-width: 600px;
+  height: 120px;
   background-color: orangered;
   border: 5px solid black;
   border-style: dashed;
@@ -60,7 +60,7 @@
   font-family: fantasy;
   letter-spacing: 5px;
 }
-.main .titulo .titulo2 {
+.main .titulo .titulos-2 {
   height: 80px;
   max-width: 500px;
   background-color: orangered;
@@ -84,67 +84,64 @@
   font-size: 13px;
 }
 
-.section {
+.section, .section1 {
   min-height: calc(100vh - 100px);
   background-image: linear-gradient(to left top, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
   display: flex;
   align-items: center;
   margin: 0;
 }
-.section .contFoto {
+.section .contFoto, .section1 .contFoto {
   background: none;
   width: 100%;
   display: flex;
   align-items: center;
   border: 0;
 }
-.section .contFoto .foto {
+.section .contFoto .foto, .section1 .contFoto .foto {
   border-radius: 180px;
   width: 250px;
   border: 5px solid black;
   margin-bottom: 25px;
   margin-top: 25px;
 }
-.section .contFoto .redes {
+.section .contFoto .redes, .section1 .contFoto .redes {
   font-size: 30px;
   letter-spacing: 15px;
   text-align: center;
 }
-.section .contFoto .redes a {
+.section .contFoto .redes a, .section1 .contFoto .redes a {
   color: black;
 }
-.section .contFoto .redes a:hover {
+.section .contFoto .redes a:hover, .section1 .contFoto .redes a:hover {
   color: orangered;
   font-size: 32px;
 }
-.section .perfilTexto {
+.section .perfilTexto, .section1 .perfilTexto {
   padding: 60px;
 }
-.section .perfilTexto .textoPerfil1 {
+.section .perfilTexto .textoPerfil1, .section1 .perfilTexto .textoPerfil1 {
   color: black;
   font-size: 50px;
-  font-family: "Tapestry", cursive;
   font-weight: 900;
+  font-family: "Tapestry", cursive;
   margin-bottom: 30px;
 }
-.section .perfilTexto .textoPerfil1 i {
+.section .perfilTexto .textoPerfil1 i, .section1 .perfilTexto .textoPerfil1 i {
   color: orangered;
   font-size: 70px;
   text-align: left;
   margin-right: 50px;
 }
-.section .perfilTexto .textoPerfil2 {
+.section .perfilTexto .textoPerfil2, .section1 .perfilTexto .textoPerfil2 {
   color: rgb(20, 20, 20);
-  text-align: justify;
+  font-size: 16px;
   font-weight: 500;
+  text-align: justify;
 }
 
 .section1 {
-  min-height: calc(100vh - 100px);
   background-image: linear-gradient(to left bottom, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
-  display: flex;
-  align-items: center;
-  margin: 0;
 }
 .section1 .tituloCurriculum {
   color: orangered;
@@ -161,11 +158,11 @@
 .section1 .divCurriculum {
   padding: 20px;
 }
-.section1 .divCurriculum article h3 {
+.section1 .divCurriculum article h2 {
   font-weight: 700;
   color: black;
 }
-.section1 .divCurriculum article h3 i {
+.section1 .divCurriculum article h2 i {
   color: orangered;
   margin-right: 20px;
   font-size: 35px;

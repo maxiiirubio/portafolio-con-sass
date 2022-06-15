@@ -56,9 +56,9 @@ $color5: rgb(78, 77, 77);
         font-weight: 900;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-        .titulo1{
-            height: 120px;
+        .titulos-1{
             max-width: 600px;
+            height: 120px;
             background-color: $color3;
             border: 5px solid $color1;
             border-style: dashed;
@@ -70,7 +70,7 @@ $color5: rgb(78, 77, 77);
             font-family: fantasy;
             letter-spacing: 5px;
         }
-        .titulo2{
+        .titulos-2{
             height: 80px;
             max-width: 500px;
             background-color: $color3;
@@ -127,7 +127,7 @@ $color5: rgb(78, 77, 77);
                 color: $color1;
                 &:hover{
                     color: $color3;
-                font-size: 32px;
+                    font-size: 32px;
                 }
             }
         }
@@ -135,11 +135,15 @@ $color5: rgb(78, 77, 77);
     .perfilTexto{
         padding: 60px;
 
+        @mixin sizes($color, $f-size, $f-weight) {
+            color: $color;
+            font-size: $f-size;
+            font-weight: $f-weight;
+        }
+
         .textoPerfil1{
-            color: $color1;
-            font-size: 50px;
+            @include sizes($color1, 50px, 900);
             font-family: 'Tapestry', cursive;
-            font-weight: 900;
             margin-bottom: 30px;
 
             i{
@@ -150,18 +154,14 @@ $color5: rgb(78, 77, 77);
             }
         }
         .textoPerfil2{
-            color: $color4;
+            @include sizes($color4, 16px, 500);
             text-align: justify;
-            font-weight: 500;
         }
     }
 }
 .section1{
-    min-height: calc(100vh - 100px);
+    @extend .section;
     background-image: linear-gradient(to left bottom, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
-    display: flex;
-    align-items: center;
-    margin: 0;
 
     .tituloCurriculum{
         color: $color3;
@@ -181,7 +181,7 @@ $color5: rgb(78, 77, 77);
 
         article{
            
-            h3{
+            h2{
                 font-weight: 700;
                 color: $color1;
     
