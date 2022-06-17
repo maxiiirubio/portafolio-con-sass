@@ -170,4 +170,46 @@
 .section1 .divCurriculum article p {
   color: rgb(78, 77, 77);
   text-align: justify;
+}
+
+.section2 {
+  min-height: calc(100vh - 100px);
+  background-image: linear-gradient(to left top, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.section2 .tituloServicios {
+  color: orangered;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 900;
+  font-family: "Tapestry", cursive;
+}
+.section2 .tituloServicios span {
+  color: black;
+  margin-left: 50px;
+}
+.section2 .listaServicios {
+  display: flex;
+  justify-content: center;
+  color: rgb(20, 20, 20);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 60px;
+}
+.section2 .listaServicios ul {
+  list-style: square;
+}
+.section2 .imgServicios {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+.section2 .imgServicios .imgServicios1 {
+  max-height: 300px;
+  border: 5px solid orangered;
+  border-radius: 20px;
 }/*# sourceMappingURL=estilos.css.map */
