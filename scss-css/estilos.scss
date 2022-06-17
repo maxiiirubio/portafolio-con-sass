@@ -49,6 +49,7 @@ $color5: rgb(78, 77, 77);
     .titulo{
         width: 100%;
         margin: 0;
+        padding: 20px;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -65,7 +66,7 @@ $color5: rgb(78, 77, 77);
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 3rem;
+            font-size: 40px;
             font-weight: 900;
             font-family: fantasy;
             letter-spacing: 5px;
@@ -79,7 +80,7 @@ $color5: rgb(78, 77, 77);
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 1,8rem;
+            font-size: 20px;
             font-weight: 900;
             font-family: fantasy;
             letter-spacing: 5px;
@@ -170,6 +171,7 @@ $color5: rgb(78, 77, 77);
         font-size: 35px;
         font-weight: 900;
         font-family: 'Tapestry', cursive;
+        margin-top: 20px;
 
         span{
             color: $color1;
@@ -206,6 +208,7 @@ $color5: rgb(78, 77, 77);
     margin: 0;
     
     .tituloServicios{
+        margin-top: 20px;
         color: $color3;
         display: flex;
         justify-content: center;
@@ -237,9 +240,100 @@ $color5: rgb(78, 77, 77);
         padding: 25px;
 
         .imgServicios1{
-            max-height: 300px;
+            max-width: 500px;
+            width: 100%;
             border: 5px solid $color3;
             border-radius: 20px;
+            margin: 0;
+        }
+    }
+}
+.section3{
+    min-height: calc(100vh - 100px);
+    background-image: linear-gradient(to left top, #ff4500, #ff5a68, #ff83ae, #ffaee1, #fad5fc, #f7e4ff, #f8f2ff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        .tituloContacto{
+            color: $color3;
+            display: flex;
+            justify-content: center;
+            font-size: 35px;
+            font-weight: 900;
+            font-family: 'Tapestry', cursive;
+
+            span{
+                color: $color1;
+                margin-left: 50px;
+            }
+        }
+        .textoContacto{
+            display: flex;
+            justify-content: center;
+            color: $color4;
+            font-weight: 500;
+        }
+        .divImg{
+            display: flex;
+            justify-content: center;
+            .imgContacto{
+                min-width: 250px;
+                max-width: 350px;
+                min-height: 250px;
+                max-height: 350px;
+                border: 5px solid $color3;
+                border-radius: 20px;
+            }
+        } 
+    }
+    .formCont{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 5px solid $color3;
+            min-width: 300px;
+            width: 480px;
+            max-height: 450px;
+            padding: 25px;
+            padding-top: 50px;
+
+            label{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                margin: 0;
+                margin-top: -15px;
+                font-weight: 500;
+            }
+            input{
+                width: 100%;
+                height: 30px;
+                background-color: $color3;
+                border: 2px solid $color1;
+            }
+            select{
+                width: 100%;
+                background-color: $color3;
+                border: 2px solid $color1;
+            }
+            textarea{
+                width: 100%;
+                height: 130px;
+                margin-top: -15px;
+                background-color: $color3;
+                border: 2px solid $color1;
+            }
         }
     }
 }
